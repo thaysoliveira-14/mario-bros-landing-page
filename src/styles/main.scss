@@ -1,0 +1,35 @@
+@use 'variaveis';
+@use 'hero';
+
+@font-face {
+    font-family: Amazon;
+    src: url(../../assets/fonts/Amazon_bold.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Amazon, sans-serif;
+}
+
+body {
+    background-color: variaveis.$corFundo;
+}
+
+.container {
+    padding: 5.6vw;
+}
+
+.title--big {
+    font-size: 18px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.title--small {
+    font-size: 14px;
+}
