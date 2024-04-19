@@ -1,0 +1,60 @@
+@use 'variaveis';
+
+.more {
+    margin-top: 64px;
+
+    &__links {
+        display: flex;
+        width: min-content;
+        margin: 0 auto;
+
+
+        &__item {
+            color: variaveis.$corTextoSecundario;
+            text-decoration: none;
+            margin-right: 16px;
+
+            &--is-active{
+                color: variaveis.$corTextoPrincipal;
+                border-bottom: 3px solid variaveis.$corTextoPrincipal;;
+            }
+        }
+    }
+
+    &__movies {
+        width: 100%;
+        margin-top: 16px;
+
+        h2 {
+            color: variaveis.$corTextoPrincipal;;
+        }
+        &__carousel {
+            overflow: hidden;
+            flex-wrap: nowrap;
+            margin-top: 8px;
+
+            &__item {
+                width: 30%px;
+                max-width: 280px;
+                margin-right: 8px;
+
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+                &__content {
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 6px;
+                    }
+            
+                    p {
+                        color: variaveis.$corTextoPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}
