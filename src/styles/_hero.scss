@@ -15,7 +15,13 @@
         p:last-child {
             margin-top: 24px;
             text-shadow: 2px 1px 4px rgb(0, 0, 0);
+            text-decoration: underline;
         }
+    }
+
+    &__gradient {
+        background-image: linear-gradient(to bottom, transparent, variaveis.$corFundo);
+        height: 100px;
     }
 
     &__logo-prime {

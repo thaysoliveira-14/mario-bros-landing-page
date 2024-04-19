@@ -1,17 +1,24 @@
 @use 'variaveis';
 @use 'hero';
+@use 'plans';
 
 @font-face {
-    font-family: Amazon;
+    font-family: AmazonBold;
     src: url(../../assets/fonts/Amazon_bold.ttf);
     font-weight: 400;
+}
+
+@font-face {
+    font-family: AmazonMedium;
+    src: url(../../assets/fonts/Amazon_medium.ttf);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Amazon, sans-serif;
+    font-family: AmazonBold, sans-serif;
+    list-style: none;
 }
 
 body {
@@ -19,7 +26,7 @@ body {
 }
 
 .container {
-    padding: 5.6vw;
+    padding: 0 5.6vw;
 }
 
 .title--big {
