@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.footer {
+    margin: 16px 0;
+
+    img {
+        width: 100px;
+        margin: 0 calc(50% - 50px);
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        a {
+            margin-right: 8px;
+            color: #31bef5;
+            text-decoration: none;
+
+            &:hover {
+                color: #90DFFE;
+            }
+        }
+    }
+
+    p {
+        color: variaveis.$corTextoSecundario;
+        text-align: center;
+    }
+}

@@ -37,6 +37,9 @@
                 width: 30%px;
                 max-width: 280px;
                 margin-right: 8px;
+                margin-bottom: 8px;
+                background-color: black;
+                border-radius: 8px;
 
                 img{
                     width: 100%;
@@ -44,17 +47,95 @@
                 }
 
                 &__content {
+                    padding: 4px 16px 8px 16px;
+                    display: none;
+
+                    .div-flex {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 8px;
+                        justify-content: space-between;
+
+                        a {
+                            margin-right: 6px;
+                            background-color: variaveis.$corBtn;
+                            border-radius: 50%;
+                            padding: 4px;
+                            width: 30px;
+                            height: 30px;
+                            transition: transform 0.2s ease;
+                            color: variaveis.$corTextoPrincipal;
+
+                            &:hover {
+                                background-color: variaveis.$corTextoPrincipal;
+                                transform: scale(1.02);
+                                color: black;
+                            }
+
+                            span {
+                                font-size: 22px;
+                            }
+                        }
+
+                        p {
+                            color: variaveis.$corTextoPrincipal;
+                        }
+                    }
+
+                    h3 {
+                        color: variaveis.$corTextoPrincipal;
+                    }
                     img {
                         width: 16px;
                         height: 16px;
                         margin-right: 6px;
                     }
             
-                    p {
-                        color: variaveis.$corTextoPrincipal;
+                    > p {
+                        color: variaveis.$corTextoSecundario;
+                        margin-bottom: 8px;
                     }
                 }
             }
+        }
+    }
+
+    &__detalhes {
+        margin-top: 16px;
+
+        h2 {
+            color: variaveis.$corTextoPrincipal;
+        }
+
+        &__duas-cores {
+            margin: 16px 0;
+
+            h3 {
+                color: variaveis.$corTextoPrincipal;
+                margin-bottom: 8px;
+            }
+
+            p {
+                color: variaveis.$corTextoSecundario;
+            }
+        }
+
+        &__atores {
+            margin: 16px 0;
+            color: variaveis.$corTextoPrincipal;
+        }
+
+        > p {
+            color: variaveis.$corTextoSecundario;
+
+            a{
+                color: variaveis.$corTextoPrincipal;
+            }
+        }
+
+        hr {
+            margin-top: 24px;
+            color: variaveis.$corTextoSecundario;
         }
     }
 }

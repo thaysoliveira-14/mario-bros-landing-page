@@ -1,0 +1,79 @@
+@use 'variaveis';
+
+.header {
+    width: 100vw;
+    background-color: variaveis.$corFundo;
+    height: 40px;
+    color: variaveis.$corTextoSecundario;
+    font-family: AmazonMedium;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+
+    .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    > a {
+        text-decoration: none;
+        white-space: nowrap;
+        color: variaveis.$corTextoSecundario;
+        margin-right: 16px;
+    }
+    }
+
+    &__img-logo {
+        width: 100px;
+        height: 60%;
+        margin-right: 40px;
+    }
+
+    &__menu {
+        margin-right: 40px;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__item {
+                padding: 0 8px;
+                white-space:  nowrap;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .item__home,
+    .item__loja,
+    .item__categorias {
+        display: none;
+    }
+
+    &__search {
+        label {
+            cursor: pointer;
+            margin-right: 16px;
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    &__select {
+        margin-right: 16px;
+        background-color: variaveis.$corFundo;
+        border: none;
+        color: variaveis.$corTextoSecundario;
+        cursor: pointer;
+    }
+
+    &__link {
+        &__img-profile {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

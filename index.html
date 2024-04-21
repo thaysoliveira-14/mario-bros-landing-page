@@ -8,6 +8,64 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <img class="header__img-logo" src="dist/imagens/Logo-min.png" alt="Logo prime video">
+            <nav class="header__menu">
+                <ul class="header__menu__list">
+                    <li class="header__menu__list__item">
+                        Home
+                        <ul class="item__home">
+                            <li>Todos</li>
+                            <li>Filmes</li>
+                            <li>Programas de televisão</li>
+                            <li>Esportes</li>
+                        </ul>
+                    </li>
+                    <li class="header__menu__list__item">
+                        Loja
+                        <ul class="item__loja">
+                            <li>Todos</li>
+                            <li>Alugue ou compre</li>
+                            <li>Canais</li>
+                        </ul>
+                    </li>
+                    <li class="header__menu__list__item">
+                        TV ao vivo
+                    </li>
+                    <li class="header__menu__list__item">
+                        Categorias
+                        <ul class="item__categorias">
+                            <h3>Gêneros</h3>
+                            <li>Ação e aventura</li>
+                            <li>Anime</li>
+                            <li>Comédia</li>
+                            <li>Documentário</li>
+                            <li>Drama</li>
+                            <li>Fantasia</li>
+                            <li>Horror</li>
+                            <li>Crianças</li>
+                            <li>Mistério e thrillers</li>
+                            <li>Romance</li>
+                            <li>Ficção científica</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <label for="search"><img src="dist/imagens/lupa.svg" alt="Lupa"></label>
+                <input type="search" name="search" id="search"/>
+            </div>
+            <a href="#">Experimentar gratuitamente</a>
+            <select name="idioma" id="idioma" class="header__select">
+                <option value="pt-br">PT</option>
+                <option value="en">EN</option>
+            </select>
+            <a href="#" class="header__link">
+                <img class="header__link__img-profile" src="dist/imagens/perfil.svg" alt="Perfil de usuário">
+            </a>
+        </div>
+    </header>
     <section class="hero">
         <div class="container">
             <img class="hero__logo-prime" src="dist/imagens/logo_prime.png" alt="Logo da Prime">
@@ -97,126 +155,199 @@
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/bad_guys.jpg" alt="The Bad Guys" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                            <div>
+                            <div class="div-flex">
                                 <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                                 <p class="title--small">Assista com um teste gratuito do Prime</p>
                             </div>
-                            <div>
-                                <h3 class="title--big"></h3>
-                                <div>
+                            <div class="div-flex">
+                                <h3 class="title--big">Os caras maus</h3>
+                                <div class="div-flex">
                                     <a href=""><span class="material-symbols-outlined">add</span></a>
                                     <a href=""><span class="material-symbols-outlined">movie</span></a>
                                 </div>
                             </div>
+                            <p class="title--small">2022 1h 36 minutos</p>
+                            <p class="title">Depois de uma vida inteira de assaltos, cinco vilões enfrentam seu maior...</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/craline.png" alt="Craline" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
                         </div>
-                        <div>
-                            <h3 class="title--big"></h3>
-                            <div>
+                        <div class="div-flex">
+                            <h3 class="title--big">Coraline e o mundo secreto</h3>
+                            <div class="div-flex">
                                 <a href=""><span class="material-symbols-outlined">add</span></a>
                                 <a href=""><span class="material-symbols-outlined">movie</span></a>
                             </div>
                         </div>
+                        <p class="title--small">2019 1h40min</p>
+                        <p class="title">Entiada em sua nova casa, Coraline encontra uma porta secreta. Através dela...</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/hotel_transilvania.jpg" alt="Hotel Transilvânia" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
-                            <div>
-                                <h3 class="title--big"></h3>
-                                <div>
-                                    <a href=""><span class="material-symbols-outlined">add</span></a>
-                                    <a href=""><span class="material-symbols-outlined">movie</span></a>
-                                </div>
+                        </div>
+                        <div class="div-flex">
+                            <h3 class="title--big">Hotel Transilvânia: Transformania</h3>
+                            <div class="div-flex">
+                                <a href=""><span class="material-symbols-outlined">add</span></a>
+                                <a href=""><span class="material-symbols-outlined">movie</span></a>
                             </div>
                         </div>
+                        <p class="title--small">2022 1h 28 minutos</p>
+                        <p class="title">Reúna-se com seus monstros favoritos para uma aventura que...</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/minions.jpg" alt="Minions" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
                         </div>
-                        <div>
-                            <h3 class="title--big"></h3>
-                            <div>
+                        <div class="div-flex">
+                            <h3 class="title--big">Meu Malvado Favorito 3</h3>
+                            <div class="div-flex">
                                 <a href=""><span class="material-symbols-outlined">add</span></a>
                                 <a href=""><span class="material-symbols-outlined">movie</span></a>
                             </div>
                         </div>
+                        <p class="title--small">2017 1h 25 minutos</p>
+                        <p class="title">Gru se une a seu irmão gêmeo há muito perdido....</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/super_pets.jpg" alt="Super Pets" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
                         </div>
-                        <div>
-                            <h3 class="title--big"></h3>
-                            <div>
+                        <div class="div-flex">
+                            <h3 class="title--big">Liga DC dos Super-Animais de Estimação</h3>
+                            <div class="div-flex">
                                 <a href=""><span class="material-symbols-outlined">add</span></a>
                                 <a href=""><span class="material-symbols-outlined">movie</span></a>
                             </div>
                         </div>
+                        <p class="title--small">2022 1h 45 minutos</p>
+                        <p class="title">Krypto, o Super-Cão, e Superman são melhores amigos inseparáveis que...</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/teenage_kraken.jpg" alt="Teenage Kraken" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
-                            <div>
-                                <h3 class="title--big"></h3>
-                                <div>
-                                    <a href=""><span class="material-symbols-outlined">add</span></a>
-                                    <a href=""><span class="material-symbols-outlined">movie</span></a>
-                                </div>
+                        </div>
+                        <div class="div-flex">
+                            <h3 class="title--big">Ruby Gillman, adolescente Kraken</h3>
+                            <div class="div-flex">
+                                <a href=""><span class="material-symbols-outlined">add</span></a>
+                                <a href=""><span class="material-symbols-outlined">movie</span></a>
                             </div>
                         </div>
+                        <p class="title--small">2023 1h 28 minutos</p>
+                        <p class="title">O ensino médio fica ainda mais estranho quando a tímida adolescente Ruby...</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/wonka.jpg" alt="Wonka" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
-                            <div>
-                                <h3 class="title--big"></h3>
-                                <div>
-                                    <a href=""><span class="material-symbols-outlined">add</span></a>
-                                    <a href=""><span class="material-symbols-outlined">movie</span></a>
-                                </div>
+                        </div>
+                        <div class="div-flex">
+                            <h3 class="title--big">Visualização estendida do Wonka</h3>
+                            <div class="div-flex">
+                                <a href=""><span class="material-symbols-outlined">add</span></a>
+                                <a href=""><span class="material-symbols-outlined">movie</span></a>
                             </div>
                         </div>
+                        <p class="title--small">2023 10 minutos</p>
+                        <p class="title">“Wonka” conta a maravilhosa história de como o maior inventor...</p>
                     </div>
                 </div>
                 <div class="more__movies__carousel__item">
                     <img src="dist/imagens/scoob.jpg" alt="Scoob" class="more__movies__carousel__item__img">
                     <div class="more__movies__carousel__item__content">
-                        <div>
+                        <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
                         </div>
+                        <div class="div-flex">
+                            <h3 class="title--big">SCOOB!</h3>
+                            <div class="div-flex">
+                                <a href=""><span class="material-symbols-outlined">add</span></a>
+                                <a href=""><span class="material-symbols-outlined">movie</span></a>
+                            </div>
+                        </div>
+                        <p class="title--small">2020 1h33min</p>
+                        <p class="title">Na maior aventura de Scooby-Doo, veja a história nunca antes contada de...</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="more__detalhes">
+            <h2 class="title--big">Mais informações</h2>
+            <div class="more__detalhes__duas-cores">
+                <h3 class="title">Assessoria de conteúdo</h3>
+                <p class="title">Violência</p>
+            </div>
+            <div class="more__detalhes__duas-cores">
+                <h3 class="title">Idiomas de áudio</h3>
+                <p class="title">Inglês , Português (Brasil) , Nederlands , Italiano , Español (Latinoamérica) , Français (França) , Français (Canadá) , Português (Portugal) , Polski , हिन्दी , Español (España) , Suomi , Türkçe , Svenska ,日本語</p>
+            </div>
+            <div class="more__detalhes__duas-cores">
+                <h3 class="title">Legendas</h3>
+                <p class="title">Inglês [CC] , Português (Brasil) , Español (Latinoamérica) , Español (España) , Suomi , Français (Canadá) , Français (França) , हिन्दी , Italiano ,日本語, Nederlands , Polski , Português (Portugal) , Svenska , Turquia</p>
+            </div>
+            <div class="more__detalhes__atores">
+                <h3 class="title">Diretores</h3>
+                <p class="title">Aaron Horvath , Michael Jelenic</p>
+            </div>
+            <div class="more__detalhes__atores">
+                <h3 class="title">Produtores</h3>
+                <p class="title">Chris Meledandri , Shigeru Miyamoto</p>
+            </div>
+            <div class="more__detalhes__atores">
+                <h3 class="title">Estrelando</h3>
+                <p class="title">Chris Pratt , Anya Taylor-Joy , Charlie Day</p>
+            </div>
+            <div class="more__detalhes__duas-cores">
+                <h3 class="title">Estúdio</h3>
+                <p class="title">Imagens Universais</p>
+            </div>
+            <p class="title">Ao clicar em reproduzir, você concorda com nossos <a href="">Termos de Uso</a>.</p>
+            <hr>
+            <div class="more__detalhes__atores">
+                <h3 class="title--big">Opinião</h3>
+                <p class="title">Envie-nos comentários</p>
+            </div>
+            <div class="more__detalhes__atores">
+                <h3 class="title--big">Apoiar</h3>
+                <p class="title">Obter ajuda</p>
+            </div>
+        </div>
     </section>
+    <footer class="footer container">
+        <img src="dist/imagens/logo_prime_video.png" alt="Prime Video">
+        <div class="footer__links">
+            <a href="#" class="title--small">Termos e Aviso de Privacidade</a>
+            <a href="#" class="title--small">Envie-nos comentários</a>
+            <a href="#" class="title--small">Ajuda</a>
+        </div>
+        <p>&copy; 1996-2024, Amazon.com, Inc. ou suas afiliadas</p>
+    </footer>
 </body>
 </html>

@@ -61,30 +61,24 @@
         margin-top: 8px;
 
         &__item {
-            margin-right: 6px;
-            background-color: variaveis.$corBtn;
-            border-radius: 50%;
-            padding: 12px;
-            width: 50px;
-            height: 50px;
-            transition: transform 0.2s ease;
-
-            &:hover {
-                background-color: variaveis.$corTextoPrincipal;
-                transform: scale(1.02);
-            }
-
+            margin-right: 8px;
+            
             &__link {
-                color: variaveis.$corTextoPrincipal;
-                transform: scale(0.5);
-
-                &:hover {
-                    color: black;
-                }
 
                 span {
+                    color:  variaveis.$corTextoPrincipal;
                     font-size: 24px;
+                    background-color: variaveis.$corBtn;
+                    border-radius: 50%;
+                    padding: 14px;
+
+                    &:hover {
+                        background-color: variaveis.$corTextoPrincipal;
+                        transform: scale(1.02);
+                        color: black;
+                    }
                 }
+                
             }
         }
     }
