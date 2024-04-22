@@ -29,12 +29,10 @@
             color: variaveis.$corTextoPrincipal;;
         }
         &__carousel {
-            overflow: hidden;
-            flex-wrap: nowrap;
             margin-top: 8px;
 
             &__item {
-                width: 30%px;
+                width: 30%;
                 max-width: 280px;
                 margin-right: 8px;
                 margin-bottom: 8px;
