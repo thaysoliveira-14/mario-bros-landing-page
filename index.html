@@ -27,34 +27,36 @@
                             <li class="item__home__last-child">Esportes</li>
                         </ul>
                     </li>
-                    <li class="header__menu__list__item">
+                    <li class="header__menu__list__item" id="loja">
                         Loja
                         <span class="material-symbols-outlined">expand_more</span>
                         <ul class="item__loja">
                             <li>Todos</li>
                             <li>Alugue ou compre</li>
-                            <li>Canais</li>
+                            <li class="item__home__last-child">Canais</li>
                         </ul>
                     </li>
                     <li class="header__menu__list__item">
                         TV ao vivo
                     </li>
-                    <li class="header__menu__list__item">
+                    <li class="header__menu__list__item" id="categorias">
                         Categorias
                         <span class="material-symbols-outlined">expand_more</span>
                         <ul class="item__categorias">
                             <h3>Gêneros</h3>
-                            <li>Ação e aventura</li>
-                            <li>Anime</li>
-                            <li>Comédia</li>
-                            <li>Documentário</li>
-                            <li>Drama</li>
-                            <li>Fantasia</li>
-                            <li>Horror</li>
-                            <li>Crianças</li>
-                            <li>Mistério e thrillers</li>
-                            <li>Romance</li>
-                            <li>Ficção científica</li>
+                            <div class="colunas">
+                                <li>Ação e aventura</li>
+                                <li>Anime</li>
+                                <li>Comédia</li>
+                                <li>Documentário</li>
+                                <li>Drama</li>
+                                <li>Fantasia</li>
+                                <li>Horror</li>
+                                <li>Crianças</li>
+                                <li>Mistério e thrillers</li>
+                                <li>Romance</li>
+                                <li>Ficção científica</li>
+                            </div>
                         </ul>
                     </li>
                 </ul>
@@ -153,15 +155,15 @@
     </section>
     <section class="more container">
         <div class="more__links">
-            <a href="#" class="more__links__item title--big more__links__item--is-active">Relacionado</a>
-            <a href="#" class="more__links__item title--big">Detalhes</a>
+            <a href="#relacionado" class="more__links__item title--big more__links__item--is-active" >Relacionado</a>
+            <a href="#detalhes" class="more__links__item title--big" >Detalhes</a>
         </div>
-        <div class="more__movies">
+        <div class="more__movies links__content active" id="relacionado">
             <h2 class="title--big">Os clientes também assistiram</h2>
             <div class="more__movies__carousel">
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#bad_guys_content">
                     <img src="dist/imagens/bad_guys.jpg" alt="The Bad Guys" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="bad_guys_content">
                             <div class="div-flex">
                                 <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                                 <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -177,9 +179,9 @@
                             <p class="title">Depois de uma vida inteira de assaltos, cinco vilões enfrentam seu maior...</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#craline_content">
                     <img src="dist/imagens/craline.png" alt="Craline" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="craline_content">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -195,9 +197,9 @@
                         <p class="title">Entiada em sua nova casa, Coraline encontra uma porta secreta. Através dela...</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#hotel_transilvania_content">
                     <img src="dist/imagens/hotel_transilvania.jpg" alt="Hotel Transilvânia" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="hotel_transilvania_content">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -213,9 +215,9 @@
                         <p class="title">Reúna-se com seus monstros favoritos para uma aventura que...</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#minions">
                     <img src="dist/imagens/minions.jpg" alt="Minions" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="minions">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -231,9 +233,9 @@
                         <p class="title">Gru se une a seu irmão gêmeo há muito perdido....</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#super_pets">
                     <img src="dist/imagens/super_pets.jpg" alt="Super Pets" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="super_pets">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -249,9 +251,9 @@
                         <p class="title">Krypto, o Super-Cão, e Superman são melhores amigos inseparáveis que...</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#teenage_kraken">
                     <img src="dist/imagens/teenage_kraken.jpg" alt="Teenage Kraken" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="teenage_kraken">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -267,9 +269,9 @@
                         <p class="title">O ensino médio fica ainda mais estranho quando a tímida adolescente Ruby...</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#wonka">
                     <img src="dist/imagens/wonka.jpg" alt="Wonka" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="wonka">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -285,9 +287,9 @@
                         <p class="title">“Wonka” conta a maravilhosa história de como o maior inventor...</p>
                     </div>
                 </div>
-                <div class="more__movies__carousel__item">
+                <div class="more__movies__carousel__item" data-content="#scoob">
                     <img src="dist/imagens/scoob.jpg" alt="Scoob" class="more__movies__carousel__item__img">
-                    <div class="more__movies__carousel__item__content">
+                    <div class="more__movies__carousel__item__content" id="scoob">
                         <div class="div-flex">
                             <img src="dist/imagens/sinal_correto.png" alt="sinal correto">
                             <p class="title--small">Assista com um teste gratuito do Prime</p>
@@ -305,7 +307,7 @@
                 </div>
             </div>
         </div>
-        <div class="more__detalhes">
+        <div class="more__detalhes links__content" id="detalhes">
             <h2 class="title--big">Mais informações</h2>
             <div class="more__detalhes__duas-cores">
                 <h3 class="title">Assessoria de conteúdo</h3>
@@ -359,6 +361,6 @@
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./dist/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

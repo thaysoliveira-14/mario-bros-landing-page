@@ -71,11 +71,12 @@
                     background-color: variaveis.$corBtn;
                     border-radius: 50%;
                     padding: 14px;
+                    transition: transform 0.2s ease;
 
                     &:hover {
                         background-color: variaveis.$corTextoPrincipal;
-                        transform: scale(1.02);
                         color: black;
+                        transform: scale(1.1);
                     }
                 }
                 
