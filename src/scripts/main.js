@@ -33,10 +33,16 @@ $(document).ready(function(){
 
         $('.more__links__item').removeClass('more__links__item--is-active')
         $(this).addClass('more__links__item--is-active')
+    })
 
-        let abaSelecionada = $(this).find("a").attr("href")
-        $('.links__content').removeClass('active')
-        $(abaSelecionada).addClass('active')
+    $('#link-relacionado').click(function() {
+        $('#detalhes').hide()
+        $('#relacionado').show()
+    })
+
+    $('#link-detalhes').click(function() {
+        $('#relacionado').hide()
+        $('#detalhes').show()
     })
 })
 
