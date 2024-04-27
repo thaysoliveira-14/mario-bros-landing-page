@@ -11,12 +11,31 @@ $(document).ready(function(){
         $(".item__categorias").toggle();
     })
 
+    $('#menu__h3').click(function() {
+        $(".header__menu__list").toggle()
+    })
+
     //Carrossel de filmes
     $('.more__movies__carousel').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
+        responsive: [
+            {
+              // Configurações para telas menores que 768px
+            breakpoint: 768,
+            settings: {
+            slidesToShow: 2, // Mudar para 2 slides na tela menor
+            slidesToScroll: 1,
+            },
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3, // Mudar para 2 slides na tela menor
+            slidesToScroll: 1,
+            }
+            }
+        ]
     });
 
     function toggleMovieContent(movie) {

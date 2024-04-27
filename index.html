@@ -14,8 +14,12 @@
 <body>
     <header class="header">
         <div class="container">
+            <!-- <div class="show__mobile">
+
+            </div> -->
             <img class="header__img-logo" src="dist/imagens/Logo-min.png" alt="Logo prime video">
             <nav class="header__menu">
+                <h3 id="menu__h3" class="show__mobile">Menu <span class="material-symbols-outlined">expand_more</span></h3>
                 <ul class="header__menu__list">
                     <li class="header__menu__list__item" id="home">
                         Home
@@ -65,8 +69,8 @@
                 <label for="search"><img src="dist/imagens/lupa.svg" alt="Lupa"></label>
                 <input type="search" name="search" id="search"/>
             </div>
-            <a href="#">Experimentar gratuitamente</a>
-            <select name="idioma" id="idioma" class="header__select">
+            <a href="#" class="hide__mobile">Experimentar gratuitamente</a>
+            <select name="idioma" id="idioma" class="header__select hide__mobile">
                 <option value="pt-br">PT</option>
                 <option value="en">EN</option>
             </select>
