@@ -35,12 +35,16 @@
 
             &__item {
                 width: 30%;
-                max-width: 280px;
+                // max-width: 280px;
                 margin-right: 8px;
                 margin-bottom: 8px;
                 background-color: black;
                 border-radius: 8px;
                 cursor: pointer;
+
+                @media (max-width:768px) {
+                    width: 100%;
+                }
 
                 img{
                     width: 100%;
@@ -51,6 +55,8 @@
                     padding: 4px 16px 8px 16px;
                     display: none;
                     transition: transform 0.2s ease;
+                    
+                
 
                     .div-flex {
                         display: flex;
@@ -76,6 +82,10 @@
 
                             span {
                                 font-size: 22px;
+
+                                // @media (max-width: 768px) {
+                                //     font-size: 16px;
+                                // }
                             }
                         }
 
@@ -86,6 +96,9 @@
 
                     h3 {
                         color: variaveis.$corTextoPrincipal;
+                        @media (max-width: 768px) {
+                            font-size: 16px;
+                        }
                     }
                     img {
                         width: 16px;
