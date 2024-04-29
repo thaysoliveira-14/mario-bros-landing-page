@@ -65,13 +65,22 @@
         margin-right: 40px;
         height: 100%;
 
-        @media  (max-width: 1023px) {
+        @media  (max-width: 768px) {
+            > h3 {
+            padding: 9px;
+            font-size: 20px;
+            text-align: center;
+            }
+        }
+
+        @media  (min-width: 769px) and (max-width: 1023px) {
             margin: 0;
 
             > h3 {
                 padding: 9px;
                 position: relative;
                 height: 100%;
+                font-size: 32px;
 
                 &:active {
                     background-color: variaveis.$corBtn;
@@ -80,6 +89,8 @@
             }
         }
 
+        
+
         &__list {
             display: flex;
             align-items: center;
@@ -87,7 +98,6 @@
             height: 100%;
 
             @media (max-width: 1023px) {
-                
                 position: absolute;
                 top: 98%;
                 left: 0;
